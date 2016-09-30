@@ -278,6 +278,7 @@ public class Chapter4 {
             ArrayList<Project> children = cur.children;
 
         }
+        return order;
     }
 
     int addNonDependent(Project[] order, ArrayList<Project> projects, int offset)
@@ -349,6 +350,7 @@ public class Chapter4 {
             return y;
         if(x != null && y != null)
             return root;
+        return root;
 
     }
 
