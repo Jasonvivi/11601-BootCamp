@@ -1,8 +1,3 @@
-import sun.jvm.hotspot.oops.ArrayKlass;
-import sun.jvm.hotspot.oops.IntField;
-import sun.jvm.hotspot.utilities.IntegerEnum;
-
-import java.lang.reflect.Array;
 import java.util.*;
 
 /**
@@ -640,10 +635,22 @@ public class Chapter8 {
         }
 
     }
+    static int maximum_XOR(int a, int b) {
+        int sum = 0;
+        for(int i = a; i< b; i++)
+            for(int j =a;j<b;j++)
+            {
+                int num = i ^ j;
+                if(num > sum)
+                    sum = num;
+            }
+
+        return sum;
+
+    }
 
     public static void main(String[] args)
     {
-        Chapter8 c8 = new Chapter8();
-        System.out.println(c8.getTesla(1,2));
+        System.out.println(10^15);
     }
 }
